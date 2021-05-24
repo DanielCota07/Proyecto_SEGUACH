@@ -3,8 +3,8 @@
 :root {
     --blanco: #ffffff;
     --negro: #212121;
-    --secundario: #6f32be;
-    --primario: #f4f81b;
+    --secundario: #60368F;
+    --primario: #DBDA69;
     --gris: #757575;
     --grisclaro: #dfe9f3; 
     --fuente-principal: 3.8rem;
@@ -20,16 +20,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
-/* Scroll */
-
-.servicios, 
-.navegacion_principal,
-.formulario {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-}
-
 
 body {
     font-size: 16px; /* 1rem = 10px */
@@ -190,43 +180,49 @@ h1,h2,h3 {
     align-items: flex-end;
 }
 
-/* Servicios */
-@media (min-width: 768px) {
-    .servicios{
+/* Acerca De*/
+
+@media (min-width:768px) {
+    .informacion {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* grid: 200px 800px / 300px 300px; */
-        /* grid-template-columns: 1fr 1fr 1fr; */
-        column-gap: 2rem;
+        grid-template-columns: 33.3%  33.3%  33.3%;
+        column-gap: 1rem;
     }
 }
-
-.servicio {
+.info {
+    text-align:center;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.servicio h3 {
-    color: var(--secundario);
-    font-weight: 400;
-}
-
-.servicio p{
-    line-height: 1.5;
+.info p{
+    margin: 0.5rem;
     text-align: justify;
 }
 
-.servicio .iconos {
-    height: 15rem;
-    width: 15rem;
-    background-color: var(--primario);
-    border-radius: 50%;
+.tiempo__espera{
+    font-weight: 700;
+}
+
+.tiempo__espera span{
+    font-weight: 400;
+}
+
+.iconos {
     display: flex;
+    height: 150px;
+    width: 150px;
     justify-content: space-evenly;
     align-items: center;
+    background-color: var(--primario);
+    border-radius: 50%;
 }
+.iconos i {
+    font-size: 2rem;
+    color: var(--oscuro);
+}
+
 
 /* Contacto */
 .formulario {
