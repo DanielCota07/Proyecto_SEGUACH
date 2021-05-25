@@ -13,7 +13,6 @@
 }
 
     /* Globales */
-
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -122,6 +121,7 @@ h1,h2,h3 {
 .navegacion_principal {
     display: flex;
     flex-direction: column;
+    padding: 0.2rem;
 }
 
 @media (min-width: 768px) {
@@ -154,7 +154,7 @@ h1,h2,h3 {
     background-size: cover;
     height: 480px;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .contenido-hero {
@@ -162,7 +162,6 @@ h1,h2,h3 {
     background-color: rgba(0, 0, 0, 0.5); /** Anterior **/
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
